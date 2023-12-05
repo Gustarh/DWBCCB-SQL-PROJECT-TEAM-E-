@@ -1,9 +1,7 @@
-# MumsWhoCodeSQL_project
-
+DWBCC6 CAPSTONE SQL PROJECT(TEAM E)
 ## Project/Goals
 
-(Fill in your description and goals here)
-
+ ANSWERING BUSINESS QUESTIONS WITH THE AIRBNB DATASET
 ## Process
 
 (Your Step 1)
