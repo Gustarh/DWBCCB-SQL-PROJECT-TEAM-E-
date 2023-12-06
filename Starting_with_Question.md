@@ -5,14 +5,14 @@ Question 1: How many total listings are there in the Capetown AirBnB data? Would
 SQL Queries:SELECT COUNT(name),
 FROM listings. 
 
-Answer:10608
+Answer:10580
 
 Question 2: How many distinct hosts are present in the CapeTown AirBnB listing? How many listings does each of this distinct hosts have? Which host have the most listings
 
-SQL Queries:SELECT COUNT(DISTINCT host_name),
+SQL Queries:SELECT COUNT(DISTINCT host_id),
 FROM listings.
 
-Answer:2613
+Answer:5283
 
 Question 3: On Availability, What is the total number of listings available for more than 90 days a year? How many listings have availability for less than 30 days a year? What percentage of listings are available for instant booking?
 
