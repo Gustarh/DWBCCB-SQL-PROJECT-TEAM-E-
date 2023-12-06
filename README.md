@@ -14,8 +14,8 @@ Analyze stage: the problem solving stage.
 
 ## Challenges
 
-(discuss the challenges you faced in the project)
+(we were unable to split the name column in the listings table. The name column contains extra irrelevant variables. )
 
 ## Future Goals
 
-(What would you do if you had more time?)
+(would have explored more of the dataset)
