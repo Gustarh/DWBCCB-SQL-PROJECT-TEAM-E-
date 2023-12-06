@@ -8,7 +8,7 @@ Data Quality Issue was identified in the Airbnb Table Dataset. Below is a summar
  SELECT DISTINCT(*) FROM listings
 
 2. Handling Missing Values. Syntax:
-DELETE FROM listings WHERE host_location <> NULL
+DELETE FROM listings WHERE host_location <> NULL.
 DELETE FROM listings WHERE first_review <> NULL
 
 3. Deleted N/A values . syntax:
