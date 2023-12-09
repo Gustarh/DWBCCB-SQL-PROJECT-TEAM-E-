@@ -24,7 +24,7 @@ ii.ALTER TABLE listings
 DROP COLUMN host_verification
 
 Data Exploration,
-After the cleaning of the anomalies and inconsistent data, the dataset is left with 39 columns and 10,508 rows
+After the cleaning of the anomalies and inconsistent data, the dataset is left with 39 columns and 8832 rows
 
 
 			
