@@ -12,6 +12,7 @@ FROM listings;
 
  Answer:The total listings is 8832 with active listings also pegged at 8832 indicating the absence of inactive listings.
 
+
 Question 2: How many distinct hosts are present in the CapeTown AirBnB listing? How many listings does each of this distinct hosts have? Which host have the most listings
 
 SQL Queries:
@@ -30,6 +31,7 @@ ORDER BY listings_count DESC
 LIMIT 10;
 
 Answers: There are 4714 distinct hosts in the CapeTown AirBnB listing. The host with the id, 57218252 has the most listings with a count of 115.
+
 
 
 Question 3: On Availability, What is the total number of listings available for more than 90 days a year? How many listings have availability for less than 30 days a year? What percentage of listings are available for instant booking?
@@ -53,6 +55,7 @@ SELECT
 FROM listings;
 
 Answer: There are 6806 total listings available for more than 90 days a year. There are also 954 listings available for less than 30 days a year. Also, the percentage of listings available for instant booking is 24.64% (to 2 d.p)
+
 
 
 
@@ -82,6 +85,7 @@ SELECT
 FROM listings
 
 Answer: The Entire Villa also has the highest average price at $9870.62. The correlation between review scores ratings and pricing on the average is 4.78 Vs $2728.76 (to @ d.p)
+
 
 
 Question 5: How do individual listings or hosts perform compared to the average or top-performing ones in terms of ratings, pricing, and booking frequency?
