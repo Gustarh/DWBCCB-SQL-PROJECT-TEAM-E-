@@ -16,6 +16,7 @@ FROM listings;
 Question 2: How many distinct hosts are present in the CapeTown AirBnB listing? How many listings does each of this distinct hosts have? Which host have the most listings
 
 SQL Queries:
+
 -- Count of distinct hosts:
 SELECT
     COUNT(DISTINCT host_id) AS distinct_hosts_count
