@@ -15,12 +15,12 @@ FROM listings;
 Question 2: How many distinct hosts are present in the CapeTown AirBnB listing? How many listings does each of this distinct hosts have? Which host have the most listings
 
 SQL Queries:
--- Count of distinct hosts
+-- Count of distinct hosts:
 SELECT
     COUNT(DISTINCT host_id) AS distinct_hosts_count
 FROM listings;
 
--- Listings count for each distinct host and the host with the most listings
+-- Listings count for each distinct host and the host with the most listings:
 SELECT
     host_id,
     COUNT(*) AS listings_count
@@ -35,19 +35,19 @@ Answers: There are 4714 distinct hosts in the CapeTown AirBnB listing. The host 
 Question 3: On Availability, What is the total number of listings available for more than 90 days a year? How many listings have availability for less than 30 days a year? What percentage of listings are available for instant booking?
 
 SQL Queries:
--- Total number of listings available for more than 90 days a year
+-- Total number of listings available for more than 90 days a year:
 SELECT
     COUNT(*) AS total_listings_more_than_90_days
 FROM listings
 WHERE CAST(availability_365 AS INTEGER) > 90;
 
--- Number of listings with availability for less than 30 days a year
+-- Number of listings with availability for less than 30 days a year:
 SELECT
     COUNT(*) AS listings_less_than_30_days
 FROM listings
 WHERE CAST(availability_365 AS INTEGER) < 30;
 
--- Percentage of listings available for instant booking
+-- Percentage of listings available for instant booking:
 SELECT
     (SUM(CASE WHEN instant_bookable = 't' THEN 1 ELSE 0 END) * 100 / COUNT(*)) AS percentage_instant_bookable
 FROM listings;
@@ -59,7 +59,7 @@ Answer: There are 6806 total listings available for more than 90 days a year. Th
 Question 4: What are the different types of properties available and their counts? Which property type has the highest average price? Write a query to show the correlation between review and pricing.
 
 SQL Queries:
--- types of property and their counts
+-- types of property and their counts:
 SELECT 
 	property_type,
 	COUNT(*) AS property_type_count
@@ -67,7 +67,7 @@ FROM listings
 GROUP BY property_type
 ORDER BY property_type_count DESC;
 
--- Property Type with Highest Average Price
+-- Property Type with Highest Average Price:
 SELECT
     property_type,
     AVG(CAST(REPLACE(REPLACE(price, '$', ''), ',', '') AS NUMERIC)) AS average_price
@@ -75,12 +75,11 @@ FROM listings
 GROUP BY property_type
 ORDER BY average_price DESC
 LIMIT 10;
--- Correlation between Review Scores and Pricing
+-- Correlation between Review Scores and Pricing:
 SELECT
 	AVG(review_score_rating) AS average_review_scores_rating,
 	AVG(CAST(REPLACE(REPLACE(price, '$', ''), ',', '') AS NUMERIC)) AS average_price
 FROM listings
-WHERE review_score_rating IS NOT NULL
 
 Answer: The Entire Villa also has the highest average price at $9870.62. The correlation between review scores ratings and pricing on the average is 4.78 Vs $2728.76 (to @ d.p)
 
@@ -93,12 +92,12 @@ SELECT
 	review_score_rating
 FROM listings
 
--- To find the average rating across all listings
+-- To find the average rating across all listings:
 SELECT
 	AVG(review_score_rating) AS average_review_score_rating
 FROM listings
 
--- Compare Pricing
+-- Compare Pricing:
 SELECT
     id,
 	AVG(CAST(REPLACE(REPLACE(price, '$', ''), ',', '') AS NUMERIC)) AS average_price,
@@ -106,13 +105,13 @@ SELECT
 FROM listings
 GROUP BY 1, 3;
 
--- Compare Booking Frequency
+-- Compare Booking Frequency:
 SELECT
     id,
     instant_bookable
 FROM listings;
 
--- To find the average instant booking frequency across all listings
+-- To find the average instant booking frequency across all listings:
 SELECT
     AVG(CASE WHEN instant_bookable = 't' THEN 1 ELSE 0 END) AS average_instant_booking_frequency
 FROM listings;
