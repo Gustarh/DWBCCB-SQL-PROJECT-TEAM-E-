@@ -10,11 +10,11 @@ Process Stage: data cleaning and exploratory stage.
 Analyze stage: the problem solving stage.
 
 ## Results
-(fill in what you discovered the data could tell you  and how you used the data to answer those questions)
+The data revealed the total listings in Capetown airbnb, the host with the highest listing as well as property type with the most listing. it also revealed average price of listings and also the average review. This would help determine the best listing to book.
 
 ## Challenges
 
-(we were unable to split the name column in the listings table. The name column contains extra irrelevant variables. )
+(We were unable to split the name column in the listings table. The name column contains extra irrelevant variables. )
 
 ## Future Goals
 
