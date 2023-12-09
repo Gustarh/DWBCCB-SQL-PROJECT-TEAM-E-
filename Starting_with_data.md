@@ -24,14 +24,18 @@ SQL Queries:
 
 Answer:(Richmond, United kingdom),(Birmingham, United Kingdom), (Torshalla, Sweden)
 
-Question 4:What are the top 5 property type in terms of price
+Question 4:What are the distinct property type in airbnb?
 
-SQL Queries:
+SQL Queries:SELECT DISTINCT property_type
+FROM listings
 
-Answer:
+Answer: Entire Vacation home, private room, hut, entire town house .......
 
-Question 5:
+Question 5:What is the most popular neighbourhood?
 
-SQL Queries:
+SQL Queries:SELECT neighbourhood,COUNT(*)AS Total_listings
+FROM listings
+GROUP BY neighbourhood
+ORDER BY Total_listings DESC
 
-Answer:
+Answer:Ward 115 is the most popular neighbourhood with total listing of 2109
