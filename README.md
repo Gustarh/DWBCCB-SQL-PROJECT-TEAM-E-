@@ -14,8 +14,8 @@ The data revealed the total listings in Capetown airbnb, the host with the highe
 
 ## Challenges
 
-(We were unable to split the name column in the listings table. The name column contains extra irrelevant variables. )
+We were unable to split the name column in the listings table. The name column contains extra irrelevant variables. We were also unable to deal with the Null and N/A values because deleting them would affect our analysis as they are so many. Hence,we analyzed our data while ignoring them.
 
 ## Future Goals
 
-(would have explored more of the dataset)
+(would have explored more of the dataset by handling the Null Values Properly)
