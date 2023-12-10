@@ -7,24 +7,14 @@ Data Quality Issue was identified in the Airbnb Table Dataset. Below is a summar
 1. Duplicate Values. Duplicates Values were removed using this Syntax:
  SELECT DISTINCT(*) FROM listings
 
-2. Handling Missing Values. Syntax:
-DELETE FROM listings WHERE host_location is NULL.
-DELETE FROM listings WHERE first_review is NULL.
-DELETE FROM listings WHERE review_scores_accuracy is NULL
-
-4. Deleted N/A values . syntax:
-DELETE FROM listings
-WHERE host_response_time='N/A'
-
-
-5. Deleted Amenities and host_verification Column as they are irrelevant and redundant to the analysis respectively. Syntax:
+2. Deleted Amenities and host_verification Column as they are irrelevant and redundant to the analysis respectively. Syntax:
 i.ALTER TABLE listings
 DROP COLUMN amenities
 ii.ALTER TABLE listings
 DROP COLUMN host_verification
 
 Data Exploration,
-After the cleaning of the anomalies and inconsistent data, the dataset is left with 39 columns and 8832 rows
+After the cleaning of the anomalies and inconsistent data, the dataset is left with 39 columns and 21120 rows
 
 
 			
