@@ -1,7 +1,7 @@
 DWBCC6 CAPSTONE SQL PROJECT(TEAM E)
 ## Project/Goals
 
- Exploring generated insights using data driven approach
+ Exploring generated insights using data driven approach to make informed business decision
 ## Process
 
 Ask stage: question asking and problem idetifying stage.
