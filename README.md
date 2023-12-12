@@ -1,7 +1,7 @@
 DWBCC6 CAPSTONE SQL PROJECT(TEAM E)
 ## Project/Goals
 
- ANSWERING BUSINESS QUESTIONS WITH THE AIRBNB DATASET
+ Exploring generated insights using data driven approach
 ## Process
 
 Ask stage: question asking and problem idetifying stage.
